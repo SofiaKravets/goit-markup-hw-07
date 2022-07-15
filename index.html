@@ -10,14 +10,14 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
 <body>
   <!--Секція header-->
-  <header class="heade">
+  <header class="header">
     <div class="header__container">
       <a class="logo" href="">Web<span class="header__logo--accent">Studio</span></a>
       <nav>
@@ -139,7 +139,7 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team__list">
           <li class="list team__item">
-            <img class="team__img" src="./images/product-designer.jpg " alt="фото Игоря Демьяненко" width="270" />
+            <img src="./images/product-designer.jpg " alt="фото Игоря Демьяненко" width="270" />
             <div class="team__content">
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__profesiya" lang="en">Product Designer</p>
@@ -178,7 +178,7 @@
             </div>
           </li>
           <li class="list team__item">
-            <img class="team__img" src="./images/frontend-developer.jpg" alt="фото Ольга Репина" width="270" />
+            <img src="./images/frontend-developer.jpg" alt="фото Ольга Репина" width="270" />
             <div class="team__content">
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__profesiya" lang="en">Frontend Developer</p>
@@ -217,7 +217,7 @@
             </div>
           </li>
           <li class="list team__item">
-            <img class="team__img" src="./images/marketing.jpg" alt="фото Николая Тарасова" width="270" />
+            <img src="./images/marketing.jpg" alt="фото Николая Тарасова" width="270" />
             <div class="team__content">
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__profesiya" lang="en">Marketing</p>
@@ -256,7 +256,7 @@
             </div>
           </li>
           <li class="list team__item">
-            <img class="team__img" src="./images/UI-Designer.jpg" alt="фото Михаила Ермакова" width="270" />
+            <img src="./images/UI-Designer.jpg" alt="фото Михаила Ермакова" width="270" />
             <div class="team__content">
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__profesiya" lang="en">UI Designer</p>
@@ -422,53 +422,53 @@
       <!--Модалка-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="modal-button" data-modal-close>
-            <svg class="modal-svg">
+          <button type="button" class="modal__button" data-modal-close>
+            <svg class="modal__close">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <div class="form-item">
-          <strong class="form-strong">Оставьте свои данные, мы вам перезвоним</strong>
+          <div class="form__item">
+          <strong class="form__title">Оставьте свои данные, мы вам перезвоним</strong>
           <form name="imputs" class="form">             
-           <label class="modal-info">
+           <label class="modal__info">
             <span>Имя</span>
             <div class="modals">
-            <input class="modal-form" type="text" name="user-name" placeholder=" ">
-              <svg class="modal-form-svg" width="18px" height="18px">
+            <input class="modal__form" type="text" name="user-name" placeholder=" ">
+              <svg class="modal__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#person"></use>
               </svg>
            </label>
           </div>
-            <label class="modal-info">
+            <label class="modal__info">
               <span>Телефон</span>
               <div class="modals">
-              <input class="modal-form" type="tel" name="user-tel" placeholder=" ">
-                <svg class="modal-form-svg" width="18px" height="18px">
+              <input class="modal__form" type="tel" name="user-tel" placeholder=" ">
+                <svg class="modal__icon" width="18px" height="18px">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
             </label>
             </div>            
-            <label class="modal-info">
+            <label class="modal__info">
               <span>Почта</span>
               <div class="modals">
-              <input class="modal-form" type="email" name="user-email" placeholder=" ">
-                <svg class="modal-form-svg" width="18px" height="18px">
+              <input class="modal__form" type="email" name="user-email" placeholder=" ">
+                <svg class="modal__icon" width="18px" height="18px">
                   <use href="./images/icons.svg#email"></use>
                 </svg>
             </label>
             </div>
-            <label class="modal-info">
+            <label class="modal__info">
               <span>Комментарий</span>
-              <textarea class="modal-texterea" name="comment" placeholder="Введите текст"></textarea>
+              <textarea class="modal__texterea" name="comment" placeholder="Введите текст"></textarea>
             </label>
             <label class="label">
-              <input class="consent-input" type="checkbox" name="consent">
-              <svg class="label-svg" width="16px" height="15px">
+              <input class="consent__input" type="checkbox" name="consent">
+              <svg class="label__svg" width="16px" height="15px">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-linc">Условия договора</a></span>              
+              <span class="checkbox__text">Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox__link">Условия договора</a></span>              
             </label>
-            <button class="form-button" type="submit">Отправить</button>
+            <button class="button button--form" type="submit">Отправить</button>
           </form>
           </div>
         </div>
